@@ -123,11 +123,11 @@ public void all_Details_should_be_shown_on_New_Tab() throws Throwable {
 public void click_on_Category_Link() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
 	
-	driver.findElement(By.xpath("//a[contains(text(),'Category')]")).click();
-	//Actions act=new Actions(driver);
+	WebElement Category=driver.findElement(By.xpath("//a[contains(text(),'Category')]")).click();
+	Actions act=new Actions(driver);
 	
-	//act.moveToElement(Category);
-	//Thread.sleep(1000);
+	act.moveToElement(Category);
+	Thread.sleep(2000);
 	
 	
    
